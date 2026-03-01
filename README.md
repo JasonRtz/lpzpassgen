@@ -1,3 +1,3 @@
 This is a simple password generator which I made using JavaFX.
 
-<img width="742" height="541" alt="Screenshot From 2026-03-01 14-24-25" src="https://github.com/user-attachments/assets/d5f0bb64-8fb8-4820-8aa6-509d03715088" />
+<img width="741" height="523" alt="Screenshot From 2026-03-01 14-25-01" src="https://github.com/user-attachments/assets/8d0c12dd-1d85-4b4b-9b7c-c351038f5a3c" />
