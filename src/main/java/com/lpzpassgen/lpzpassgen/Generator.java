@@ -33,6 +33,19 @@ public class Generator {
             throw new IllegalArgumentException("Password length must be greater than 0.");
         }
 
+        int selectedTypes = 0;
+
+        if (numbers) selectedTypes++;
+        if (letters) selectedTypes++;
+        if (characters) selectedTypes++;
+
+        if (length < selectedTypes) {
+            throw new IllegalArgumentException(
+                    "Password length must be at least " + selectedTypes +
+                            " for the selected character types."
+            );
+        }
+
         SecureRandom random = new SecureRandom();
         StringBuilder password = new StringBuilder(length);
 

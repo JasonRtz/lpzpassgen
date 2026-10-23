@@ -10,6 +10,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.event.ActionEvent;
 import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
+import javafx.scene.control.Alert;
 
 public class Controller {
 
@@ -39,7 +40,7 @@ public class Controller {
     @FXML
     public void initialize() {
         if (char_num != null) {
-            char_num.setMin(4);    // enforce minimum password length
+            char_num.setMin(12);    // enforce minimum password length
             char_num.setValue(12); // default starting value
         }
 
@@ -62,7 +63,15 @@ public class Controller {
         }
 
         if (!numbers && !letters && !characters) {
-            letters = true; // default to letters if nothing selected
+            main_field.clear();
+
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Invalid Selection");
+            alert.setHeaderText(null);
+            alert.setContentText("Please select at least one character type.");
+            alert.showAndWait();
+
+            return;
         }
 
         try {
