@@ -20,7 +20,8 @@ The application uses Java's `SecureRandom` class for cryptographically secure ra
 
 ## Screenshot
 
-![LPZ Password Generator](https://github.com/user-attachments/assets/8d0c12dd-1d85-4b4b-9b7c-c351038f5a3c)
+<img width="752" height="538" alt="Screenshot 2026-10-23 231704" src="https://github.com/user-attachments/assets/a8b1c342-c2a8-4922-afd3-8cb257d58d91" />
+
 
 ## Technologies
 
